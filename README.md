@@ -9,7 +9,7 @@
 
 This project presents an end-to-end framework utilizing deep learning models as substitutes for HLS tools to obtain QoR results through predictive modeling. Concurrently, it incorporates our proposed LLM4DSE framework to leverage LLMs' semantic comprehension capabilities for intelligent design space exploration, employing trained predictive models for QoR estimation to identify Pareto-optimal solutions.
 
-![The framework of MPM-LLM4DSE](framework.jpeg)
+![The framework of MPM-LLM4DSE](framework.png)
 
 ### Contribution
 we propose MPM-LLMDSE, an automated framework featuring:
@@ -20,29 +20,29 @@ we propose MPM-LLMDSE, an automated framework featuring:
 ## <span id="jump2">Project File Tree</span>
 ```
 |--MPM-LLM4DSE
-|--dse_database                    # database, graphs, codes to generate/analyze them
-|--ECoGNN                          # components of ECoGNN
-|   +--action_gumbel_layer.py
-|   +--layers.py
-|   +--model_parse.py
-|--LLM4DSE                         # the implementation details of LLM4DSE and the comparison of prompt word methods
-|   +--dse.py
-|   +--LLM.py
-|   +--prompt.py
-|--Save the model parameters       # save model weights and generate the files required for CDFGs
-|--src                             # the source codes for defining and training the model and running the DSE
-|   +--config.py
-|   +--config_ds.py
-|   +--main.py
-|   +--model.py
-|   +--nn_att.py
-|   +--parallel_run_tool_dse.py
-|   +--parameter.py
-|   +--programl_data.py
-|   +--result.py
-|   +--saver.py
-|   +--train.py
-|   +--utils.py
+  |--dse_database                    # database, graphs, codes to generate/analyze them
+  |--ECoGNN                          # components of ECoGNN
+  |   +--action_gumbel_layer.py
+  |   +--layers.py
+  |   +--model_parse.py
+  |--LLM4DSE                         # the implementation details of LLM4DSE and the comparison of prompt word methods
+  |   +--dse.py
+  |   +--LLM.py
+  |   +--prompt.py
+  |--Save the model parameters       # save model weights and generate the files required for CDFGs
+  |--src                             # the source codes for defining and training the model and running the DSE
+  |   +--config.py
+  |   +--config_ds.py
+  |   +--main.py
+  |   +--model.py
+  |   +--nn_att.py
+  |   +--parallel_run_tool_dse.py
+  |   +--parameter.py
+  |   +--programl_data.py
+  |   +--result.py
+  |   +--saver.py
+  |   +--train.py
+  |   +--utils.py
 ```
 
 ## <span id="jump3">Required environment</span>
