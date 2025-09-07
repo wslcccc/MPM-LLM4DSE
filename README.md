@@ -29,7 +29,7 @@ we propose MPM-LLMDSE, an automated framework featuring:
   |   +--dse.py
   |   +--LLM.py
   |   +--prompt.py
-  |--Save the model parameters       # save model weights and generate the files required for CDFGs
+  |--save_models_and_data       # save model weights and generate the files required for CDFGs
   |--src                             # the source codes for defining and training the model and running the DSE
   |   +--config.py
   |   +--config_ds.py
