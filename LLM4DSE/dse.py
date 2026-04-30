@@ -283,7 +283,7 @@ class Explorer():
             None,
             self.log)
         self.batch_size = 1
-        self.num_top_designs = 3
+        self.num_top_designs = 10
         self.key_perf_dict = OrderedDict()
         self.best_results_dict = {}
         self.best_result: Result = Result()
@@ -423,6 +423,20 @@ class Explorer():
 
         return data
 
+    """ 
+        The following code can also be replaced by the dominance relationship.
+        function findNonDominatedSolutions(designPoints):
+                nonDominatedSet = empty list
+                for each point p in designPoints:
+                    dominated = false
+                    for each point q in designPoints:
+                        if p != q and dominates(q, p):
+                            dominated = true
+                            break
+                    if not dominated:
+                        add p to nonDominatedSet
+        return nonDominatedSet"""
+    
     def update_best(self, result: Result):
         """Keep tracking the best result found in this explorer.
 
